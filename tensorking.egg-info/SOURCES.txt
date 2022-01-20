@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+tensorking/__init__.py
+tensorking/activation.py
+tensorking/layers.py
+tensorking/loss.py
+tensorking.egg-info/PKG-INFO
+tensorking.egg-info/SOURCES.txt
+tensorking.egg-info/dependency_links.txt
+tensorking.egg-info/requires.txt
+tensorking.egg-info/top_level.txt
