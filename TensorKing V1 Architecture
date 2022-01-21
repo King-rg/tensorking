@@ -1,1 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2022-01-20T20:51:43.261Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" version="16.4.2" etag="UOtF1_RGbGqXXxMqjaI2" type="github"><diagram id="l4uyXChi9p4SZZZgrcoF">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-21T11:47:52.395Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="BuH9oG4x4y_YPNIgalxi" version="16.4.2" type="github">
+  <diagram id="l4uyXChi9p4SZZZgrcoF" name="Page-1">
+    <mxGraphModel dx="1102" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-46HDTLXFUJ7iOmidIgJ-2" value="Sequential Model" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="740" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="-46HDTLXFUJ7iOmidIgJ-6" value="Layers" style="swimlane;" vertex="1" parent="-46HDTLXFUJ7iOmidIgJ-2">
+          <mxGeometry x="10" y="30" width="460" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="-46HDTLXFUJ7iOmidIgJ-4" value="Layer- Dense" style="swimlane;" vertex="1" parent="-46HDTLXFUJ7iOmidIgJ-6">
+          <mxGeometry x="70" y="55" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-46HDTLXFUJ7iOmidIgJ-5" value="Activation - ReLu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="-46HDTLXFUJ7iOmidIgJ-4">
+          <mxGeometry x="40" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
