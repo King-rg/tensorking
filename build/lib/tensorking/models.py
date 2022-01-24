@@ -31,7 +31,8 @@ class Sequential():
 
     # This propogates inputs through the network
     def forward(self, inputs):
-        self.prepare(inputs) 
+        self.prepare(inputs)
+        
         return self.layers[0].forward(inputs)
 
     # Fitting function

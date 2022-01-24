@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tensorking
+Version: 0.0.1
+Summary: The predecessor to cognitare from the book NNFS
+Home-page: https://github.com/King-rg/tensorking
+Author: dandisk (David King)
+Author-email: <dandisk@protonmail.com>
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# tensorking
+The predecessor to cognitare from the book NNFS
+
+
