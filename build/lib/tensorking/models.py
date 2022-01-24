@@ -9,8 +9,9 @@ class Sequential():
     """
     
     # List containing layer class'
-    def __init__(self, layers: list):
+    def __init__(self, layers: list, loss = False):
         self.layers = layers
+        self.loss = loss
 
     # This function prepares the layers on the network to be stacked on each other.
     def prepare(self, inputs):
@@ -35,5 +36,13 @@ class Sequential():
         return self.layers[0].forward(inputs)
 
     # Fitting function
-    def fit(self):
-        pass
+    def fit(self, x, y):
+        if self.loss == False:
+            print('ERROR: No loss function provided')
+        else:
+            output = self.forward(x)
+
+            if x.shape == y.shape:
+                print(self.loss.calculate(output, y))
+            else:
+                print('ERROR: Please transform the y values. Fitting Disabled')

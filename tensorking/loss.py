@@ -8,4 +8,4 @@ class CategoricalCrossentropy:
 
 class MeanSquareError:
     def calculate(y_pred, y_true):
-        
+        pass
