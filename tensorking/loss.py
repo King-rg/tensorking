@@ -1,12 +1,16 @@
 import numpy as np
 
-# Common loss class
 class CategoricalCrossentropy:
     def calculate(y_pred, y_true):
-        print(y_pred)
         loss = y_true*np.log(y_pred)
-        return loss
+        return loss.mean()
 
 class MeanSquareError:
     def calculate(y_pred, y_true):
-        pass
+        mse = (y_pred-y_true) ** 2
+        return mse.mean()
+
+class MeanAbsoluteError:
+    def calculate(y_pred, y_true):
+        mae = np.abs(y_pred-y_true) 
+        return mae.mean()

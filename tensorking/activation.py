@@ -22,3 +22,12 @@ class Softmax:
                                             keepdims=True)
 
         return probabilities
+
+class Sigmoid:
+    def forward(inputs):
+
+        exponentiate = 1 + np.exp(-inputs)
+
+        sigmoid = 1 / exponentiate
+
+        return sigmoid
