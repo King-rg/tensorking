@@ -42,7 +42,4 @@ class Sequential():
         else:
             output = self.forward(x)
 
-            if x.shape == y.shape:
-                print(self.loss.calculate(output, y))
-            else:
-                print('ERROR: Please transform the y values. Fitting Disabled')
+            return self.loss.calculate(output, y)
