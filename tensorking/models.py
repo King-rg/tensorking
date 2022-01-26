@@ -36,10 +36,18 @@ class Sequential():
         return self.layers[0].forward(inputs)
 
     # Fitting function
-    def fit(self, x, y):
+    def fit(self, x, y, epochs=5):
         if self.loss == False:
             print('ERROR: No loss function provided')
         else:
-            output = self.forward(x)
+            
+            epoch=0
+            while (epoch < epochs): 
+                output = self.forward(x)
+                loss = self.loss.calculate(output, y)
+                
+                print(loss)
 
-            return self.loss.calculate(output, y)
+                self.layers[0].weights[0][0] = self.layers[0].weights[0][0]+0.05
+
+                epoch=epoch+1

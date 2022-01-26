@@ -16,4 +16,4 @@ X, y = spiral_data(samples=50, classes=3)
 
 transformed_y = np.reshape(y, (len(y), 1))
 
-print(model.fit(X, transformed_y))
+model.fit(X, transformed_y)

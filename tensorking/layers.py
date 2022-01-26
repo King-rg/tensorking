@@ -11,11 +11,14 @@ class Dense:
         self.biases = np.zeros((1, n_neurons))
         self.activation = activation
 
+        self.prev_activate = False
         self.next_layer = False
  
     # Create the weights necessary for the forward function
     def activate(self, n_inputs):
-        self.weights = 0.01 * np.random.randn(n_inputs,self.n_neurons)
+        if (self.prev_activate == False):
+            self.weights = 0.01 * np.random.randn(n_inputs,self.n_neurons)
+            self.prev_activate = True
 
     # Forward pass
     def forward(self, inputs):
