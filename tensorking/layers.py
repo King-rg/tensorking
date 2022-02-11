@@ -1,11 +1,12 @@
 
 import numpy as np
+import random
 
 # Dense layer
 class Dense:
 
     # Layer initialization
-    def __init__(self, n_neurons, activation = False):
+    def __init__(self, n_neurons, activation = False):        
         # Initialize weights and biases
         self.n_neurons = n_neurons
         self.biases = np.zeros((1, n_neurons))
