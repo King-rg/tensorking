@@ -6,9 +6,6 @@ class ReLU():
         # Calculate output values from inputs
         return np.maximum(0, inputs)
 
-
-
-
 # Softmax activation
 class Softmax:
     # Forward pass
